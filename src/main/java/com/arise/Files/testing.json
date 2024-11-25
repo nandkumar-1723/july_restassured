@@ -1,0 +1,35 @@
+{
+  "groupA": [
+    {
+      "firstName": "virat",
+      "lastName": "Kohali",
+      "age": 36,
+      "team": "RCB",
+      "salary":"17cr"
+    },
+    {
+      "firstName": "Rohit",
+      "lastName": "Sharma",
+      "age": 35,
+      "team": "MI",
+      "salary":"15cr"
+    }
+  ],
+  "groupB": [
+    {
+      "firstName": "KL",
+      "lastName": "Rahul",
+      "age": 28,
+      "team": "LSG",
+      "salary":"15cr"
+
+    },
+    {
+      "firstName": "MS",
+      "lastName": "DHONI",
+      "age": 33,
+      "team": "CSK",
+      "salary":"4cr"
+    }
+  ]
+}
