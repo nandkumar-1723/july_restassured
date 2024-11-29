@@ -6,12 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="f8775628-71ee-49ac-bd4a-6b3143daa252" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/UserStory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/UserStory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,21 +26,27 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2pLTO71CYLR11f4MfFoBY0hRfHc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.UserStory.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nandkumar/Videos/july_restassured&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.Bug.executor": "Run",
+    "TestNG.Bug.loginJira.executor": "Run",
+    "TestNG.UserStory.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/nandkumar/Videos/july_restassured",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="TestNG.Bug">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="july_restassured" />
       <method v="2">
@@ -44,6 +56,41 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="july_restassured" />
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bug" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JIRA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestCases" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.Bug" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bug.loginJira" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JIRA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestCases" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.Bug" />
+      <option name="METHOD_NAME" value="loginJira" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,6 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Bug" />
+        <item itemvalue="TestNG.Bug.loginJira" />
         <item itemvalue="TestNG.UserStory" />
       </list>
     </recent_temporary>
