@@ -1,0 +1,57 @@
+GIVEN-WHEN-THEN
+
+GIVEN - Preconditions
+  - BASEURI
+  - BODY
+  - HEADER
+  - COOKIE (HEADER)
+  - QUERY PARAMETER
+
+WHEN - Actual actions
+  - HTTP Method with END-POINT
+
+THEN - validation
+  - use log.all/body/error/etc --> if you wants the console
+  - extract.response --> to store response one variable
+
+
+For login:
+- body
+- baseuri
+- header
+- http method with endpoint
+- validation part
+
+
+For create bug:
+- body
+- baseuri
+- header
+- cookie (header)
+- http method with endpoint
+- validation part
+
+For get bug:
+- baseuri
+- header
+- cookie (header)
+- http method with endpoint
+- validation part
+
+
+For update bug:
+- baseuri
+- body
+- header
+- cookie (header)
+- http method with endpoint
+- validation part
+
+
+For delete bug:
+- baseuri
+- header
+- cookie (header)
+- http method with endpoint
+- validation part
+
