@@ -55,3 +55,11 @@ For delete bug:
 - http method with endpoint
 - validation part
 
+Add an attachment
+- baseuri
+- header
+- cookie
+- body ( form data / File)
+- http method with endpoint
+- validation part
+

@@ -7,7 +7,7 @@ import java.io.*;
 public class ReadJson {
     public static void main(String[] args) throws IOException, ParseException {
         //read json file
-        FileReader fr = new FileReader("/home/nandkumar/Videos/July_RestAssured/src/main/java/com/arise/Files/testing.json");
+        FileReader fr = new FileReader("/home/nandkumar/Videos/july_restassured/src/main/java/com/arise/Files/testing.json");
         JSONParser jp = new JSONParser();
         String jsonBody = jp.parse(fr).toString();
         System.out.println(jsonBody);
@@ -20,6 +20,10 @@ public class ReadJson {
         // read the team from groupA index-0
         String team = js.getJSONArray("groupA").getJSONObject(0).get("team").toString();
         System.out.println(team);
+
+        // Find the size of array
+      int size =  js.getJSONArray("groupA").length();
+        System.out.println(size);
 
         //Assignment
 //        1. find the team name from group-A index-0

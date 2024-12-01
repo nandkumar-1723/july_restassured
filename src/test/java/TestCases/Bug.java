@@ -7,6 +7,7 @@ import org.json.simple.parser.*;
 import org.testng.annotations.*;
 
 import java.io.*;
+import java.util.*;
 
 /**
  * @author Nandkumar Babar
@@ -15,6 +16,7 @@ public class Bug {
 
     public static String cookie;
     private String issueId;
+    private String url;
 
 //    login is must (Why - we need the cookie to perform the CRUD operations
 
@@ -25,7 +27,13 @@ public class Bug {
         JSONParser jp = new JSONParser();
         String requestBody = jp.parse(fr).toString();
 
-        Response response = RestAssured.given().baseUri("http://localhost:9008").body(requestBody)
+        FileReader readFile = new FileReader("/home/nandkumar/Videos/july_restassured/src/main/java/com/arise/Files/file.properties");
+        Properties pr = new Properties();
+        pr.load(readFile);
+        url = pr.getProperty("url");
+
+
+        Response response = RestAssured.given().baseUri(url).body(requestBody)
                 .header("Content-Type", "application/json")
                 .when().post("/rest/auth/1/session").then().extract().response();
 
@@ -44,7 +52,7 @@ public class Bug {
   JSONParser jp = new JSONParser();
     String requestBody =  jp.parse(fr).toString();
 
-        Response response = RestAssured.given().baseUri("http://localhost:9008").body(requestBody)
+        Response response = RestAssured.given().baseUri(url).body(requestBody)
                 .header("Content-Type", "application/json")
                 .header("Cookie", cookie).when().post("/rest/api/2/issue")
                 .then().log().body().extract().response();
@@ -60,7 +68,7 @@ public class Bug {
     @Test(priority = 3)
     public void getBug(){
 
-        Response response = RestAssured.given().baseUri("http://localhost:9008").header("Content-Type", "application/json")
+        Response response = RestAssured.given().baseUri(url).header("Content-Type", "application/json")
                 .header("Cookie", cookie).when().get("/rest/api/2/issue/" + issueId)
                 .then().extract().response();
 
@@ -79,7 +87,7 @@ public class Bug {
         JSONObject updatedBody = new JSONObject(requestBody);
         updatedBody.getJSONObject("fields").put("summary","update the current bug");
 
-        Response response = RestAssured.given().baseUri("http://localhost:9008")
+        Response response = RestAssured.given().baseUri(url)
                 .header("Content-Type", "application/json")
                 .header("Cookie", cookie).body(updatedBody.toString())
                 .when().put("/rest/api/2/issue/" + issueId)
@@ -92,7 +100,7 @@ public class Bug {
     @Test(priority = 5)
     public void deleteBug(){
 
-        Response response = RestAssured.given().baseUri("http://localhost:9008")
+        Response response = RestAssured.given().baseUri(url)
                 .header("Content-Type", "application/json")
                 .header("Cookie", cookie)
                 .when().delete("/rest/api/2/issue/" + issueId)
@@ -100,6 +108,4 @@ public class Bug {
 
         System.out.println(response.getStatusCode());
     }
-
-
 }

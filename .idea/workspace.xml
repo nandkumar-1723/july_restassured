@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f8775628-71ee-49ac-bd4a-6b3143daa252" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arise/Files/GIVEN_WHEN_THEN" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arise/Files/GIVEN_WHEN_THEN" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReadFiles/ReadJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReadFiles/ReadJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/Bug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/Bug.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +40,54 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ReadJson.executor": "Run",
+    "Application.ReadProperties.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.Attachment.executor": "Run",
     "TestNG.Bug.executor": "Run",
     "TestNG.Bug.loginJira.executor": "Run",
+    "TestNG.QueryParameter.executor": "Run",
     "TestNG.UserStory.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/nandkumar/Videos/july_restassured",
+    "last_opened_file_path": "/home/nandkumar/Videos/july_restassured/src/main/java/com/arise/Files",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/arise/Files" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="TestCases" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.Bug">
+    <configuration name="ReadJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReadFiles.ReadJson" />
+      <module name="JIRA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReadFiles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadProperties" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReadFiles.ReadProperties" />
+      <module name="JIRA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReadFiles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="july_restassured" />
       <method v="2">
@@ -56,6 +97,23 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="july_restassured" />
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Attachment" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JIRA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestCases" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.Attachment" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Bug.loginJira" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="QueryParameter" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JIRA" />
       <extension name="coverage">
         <pattern>
@@ -86,25 +144,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="TestCases.Bug" />
-      <option name="METHOD_NAME" value="loginJira" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserStory" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JIRA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TestCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestCases" />
-      <option name="MAIN_CLASS_NAME" value="TestCases.UserStory" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.QueryParameter" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -115,8 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Bug" />
-        <item itemvalue="TestNG.Bug.loginJira" />
-        <item itemvalue="TestNG.UserStory" />
+        <item itemvalue="Application.ReadProperties" />
+        <item itemvalue="Application.ReadJson" />
+        <item itemvalue="TestNG.QueryParameter" />
+        <item itemvalue="TestNG.Attachment" />
       </list>
     </recent_temporary>
   </component>
